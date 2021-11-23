@@ -1,12 +1,14 @@
-- instalar o java (https://www.oracle.com/br/java/technologies/javase/jdk11-archive-downloads.html - windows x64 installer)
-- instalar o postman
-- instalar o docker
+- instalar o java (https://drive.google.com/file/d/1HyeOaCAFK56bi6N9U-7VLQ02iVzCGO0M/view?usp=sharing)
+- baixar o app (https://drive.google.com/file/d/1lziucsb8NWORnEnsbjBEXZLXeojeuX4r/view?usp=sharing)
+- baixar o repositório (https://github.com/Tekislla/mypet)
+- instalar o postman (https://drive.google.com/file/d/1u7TkUC6kkzdBzsLpfxvecGwJcI5px-xc/view?usp=sharing)
+- instalar o docker (https://drive.google.com/file/d/1taFyKDGeMZ1Ftu386oqdZ0iDxcgzUvDu/view?usp=sharing)
 	- abrir o cmd e executar: docker run -p 5432:5432 --name postgres -e POSTGRES_PASSWORD=postgres -d postgres
 
-- abrir o cmd e ir até a pasta onde está o aplicativo
+- abrir o cmd e ir até a pasta onde está o app
 	- digitar o comando: java -jar mypet-0.0.1-SNAPSHOT.jar
 
-- abrir os arquivos html (signup e addpet)
+- abrir os arquivos html na pasta FRONTEND do repositório (apenas signup e addpet)
 	- cadastrar o usuário
 	- cadastrar o pet
 
