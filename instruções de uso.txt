@@ -2,6 +2,7 @@
 - baixar o app (https://drive.google.com/file/d/1lziucsb8NWORnEnsbjBEXZLXeojeuX4r/view?usp=sharing)
 - baixar o repositório (https://github.com/Tekislla/mypet)
 - instalar o postman (https://drive.google.com/file/d/1u7TkUC6kkzdBzsLpfxvecGwJcI5px-xc/view?usp=sharing)
+- instalar pgadmin (https://drive.google.com/file/d/1pJlmL6_UP4pAcNGpi8fNqBPtgQLzeaCy/view?usp=sharing)
 - instalar o docker (https://drive.google.com/file/d/1taFyKDGeMZ1Ftu386oqdZ0iDxcgzUvDu/view?usp=sharing)
 	- abrir o cmd e executar: docker run -p 5432:5432 --name postgres -e POSTGRES_PASSWORD=postgres -d postgres
 
