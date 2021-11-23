@@ -1,0 +1,21 @@
+- instalar o java (https://www.oracle.com/br/java/technologies/javase/jdk11-archive-downloads.html - windows x64 installer)
+- instalar o postman
+- instalar o docker
+	- abrir o cmd e executar: docker run -p 5432:5432 --name postgres -e POSTGRES_PASSWORD=postgres -d postgres
+
+- abrir o cmd e ir até a pasta onde está o aplicativo
+	- digitar o comando: java -jar mypet-0.0.1-SNAPSHOT.jar
+
+- abrir os arquivos html (signup e addpet)
+	- cadastrar o usuário
+	- cadastrar o pet
+
+- ir até o postman
+- digitar localhost:5000/mypet/person/find-all ----- (encontrar todos os usuários)
+	- localhost:5000/mypet/person/find-by-id/{id a ser passado} ----- (encontrar usuário por id)
+	- localhost:5000/mypet/person/delete-person/{id a ser passado} ----- (deletar usuário por id)
+
+
+	- localhost:5000/mypet/pet/find-all ----- (encontrar todos os pets)
+	- localhost:5000/mypet/pet/find-by-id/{id a ser passado} ----- (encontrar pet por id)
+	- localhost:5000/mypet/person/delete-pet/{id a ser passado} ----- (deletar pet por id)
