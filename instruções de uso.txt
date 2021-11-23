@@ -22,3 +22,4 @@
 	- localhost:5000/mypet/pet/find-all ----- (encontrar todos os pets)
 	- localhost:5000/mypet/pet/find-by-id/{id a ser passado} ----- (encontrar pet por id)
 	- localhost:5000/mypet/person/delete-pet/{id a ser passado} ----- (deletar pet por id)
+
