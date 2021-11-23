@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Sign up</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sign-in/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<script>
+  function savePerson(){
+    console.log("Person saved!");
+    fetch('http://localhost:5000/mypet/person/create-person', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({name: document.getElementsByName("name")[0].value, login: document.getElementsByName("login")[0].value, email:document.getElementsByName("email")[0].value, password: document.getElementsByName("password")[0].value})
+    })
+  }
+</script>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="style/css/signin.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+    
+<main class="form-signin">
+  <div id="signup">
+    <img class="mb-4" src="assets/img/logo.png" alt="" width="90" height="71">
+    <h1 class="h3 mb-3 fw-normal">Sign up</h1>
+
+    <div class="form-floating">
+      <input type="text" class="form-control" name="name" id="floatingInput" placeholder="Name">
+      <label for="floatingInput">Name</label>
+    </div>
+    <div class="form-floating">
+      <input type="text" class="form-control" name="login" id="floatingInput" placeholder="Login">
+      <label for="floatingInput">Login</label>
+    </div>
+    <div class="form-floating">
+      <input type="email" class="form-control" name="email" id="floatingInput" placeholder="Email">
+      <label for="floatingInput">Email</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" name="password" id="floatingInput" placeholder="Password">
+      <label for="floatingInput">Password</label>
+    </div>
+<!--
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Confirm password" >
+      <label for="floatingPassword">Confirm your password</label>
+    </div>
+-->
+<!--   
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+-->
+
+    <button class="w-100 btn btn-lg btn-primary" onclick="savePerson()" style="background-color: #F2B66D; border: none;">Sign up!</button>
+    <p class="mt-5 mb-3 text-muted">&copy; AFK Society - 2021</p>
+  </form>
+  
+</main>
+
+
+    
+  </body>
+</html>

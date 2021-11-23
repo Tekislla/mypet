@@ -1,0 +1,30 @@
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+
+	<changeSet id="mypet" author="joao_lazarim">
+		<createTable tableName="person">
+			<column name="id" type="bigint" autoIncrement="true">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="login" type="varchar(20)" />
+			<column name="name" type="varchar(50)" />
+			<column name="email" type="varchar(50)" />
+			<column name="password" type="varchar(50)" />
+		</createTable>
+		<createTable tableName="pet">
+			<column name="id" type="bigint" autoIncrement="true">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="name" type="varchar(50)" />
+			<column name="type" type="varchar(20)" />
+			<column name="race" type="varchar(20)" />
+			<column name="city" type="varchar(30)" />
+			<column name="state" type="varchar(30)" />
+			<column name="age" type="int" />
+			<column name="photo" type="bytea" />
+		</createTable>
+	</changeSet>
+</databaseChangeLog>
