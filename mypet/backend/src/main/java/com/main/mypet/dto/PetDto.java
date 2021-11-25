@@ -9,7 +9,9 @@ public class PetDto {
 	private String race;
 	private String city;
 	private String state;
+	private String contactEmail;
 	private int age;
+	private byte[] photo;
 	
 	public PetDto() {
 		

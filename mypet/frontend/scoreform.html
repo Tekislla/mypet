@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Conclua seu cadastro</title>
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sign-in/">
+    <link rel="shortcut icon" href="assets/img/urlicon.png">
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/forms.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="text-center">
+
+    <main class="form-signin">
+      <div id="signup">
+        <img class="mb-4" src="assets/img/logo.png" alt="" width="90" height="71">
+        <h1 class="h3 mb-3 fw-normal">Finalize seu cadastro</h1>
+        <div class="form-floating">
+          <label for="floatingInput">Você mora em apartamento ou casa?</label>
+          <select type="text" class="form-control" name="question1">
+              <option selected disabled hidden>Selecione uma opção</option>
+              <option>Apartamento</option>
+              <option>Casa</option>
+          </select>
+          <br>
+        </div>
+        <div class="form-floating">
+          <label for="floatingInput">Você tem crianças menores que 3 anos em casa?</label>
+          <select type="text" class="form-control" name="question2">
+            <option selected disabled hidden>Selecione uma opção</option>
+            <option>Sim</option>
+            <option>Não</option>
+        </select>
+        <br>
+        </div>
+        <div class="form-floating">
+          <label for="floatingInput">Seu pet ficaria sozinho quantas horas por dia?</label>
+          <select type="text" class="form-control" name="question3">
+            <option selected disabled hidden>Selecione uma opção</option>
+            <option>Menos que 8 horas</option>
+            <option>Mais que 8 horas</option>
+        </select>
+        <br>
+        </div>
+        <div class="form-floating">
+          <label for="floatingInput">Você possui outros pets? Quantos?</label>
+          <select type="text" class="form-control" name="question4">
+            <option selected disabled hidden>Selecione uma opção</option>
+            <option>0 ou 1</option>
+            <option>2 ou 3</option>
+            <option>Mais que 3</option>
+        </select>
+        <br>
+        </div>
+        <div class="form-floating">
+          <label for="floatingInput">Você possui condições financeiras de sustentar um pet?</label>
+          <select type="text" class="form-control" name="question5">
+            <option selected disabled hidden>Selecione uma opção</option>
+            <option>Sim</option>
+            <option>Não</option>
+        </select>
+      <br>
+        <button class="w-100 btn btn-lg btn-primary" onclick="addScore()" style="background-color: #F2B66D; border: none;">Finalizar cadastro</button>
+        <p class="mt-5 mb-3 text-muted">&copy; AFK Society - 2021</p>
+      </div>  
+    </main>
+  </body>
+</html>

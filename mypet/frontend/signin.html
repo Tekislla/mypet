@@ -1,19 +1,15 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.88.1">
-    <title>Sign in</title>
+    <title>Login</title>
+    <script type="text/javascript" src="js/scripts.js"></script>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sign-in/">
-
-    
-
-    <!-- Bootstrap core CSS -->
-<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/urlicon.png">
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/forms.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -30,40 +26,27 @@
         }
       }
     </style>
-
-    
-    <!-- Custom styles for this template -->
-    <link href="style/css/signin.css" rel="stylesheet">
   </head>
+
   <body class="text-center">
-    
-<main class="form-signin">
-  <form id="signup" method="post">
-    <img class="mb-4" src="assets/img/logo.png" alt="" width="90" height="71">
-    <h1 class="h3 mb-3 fw-normal">Sign in</h1>
 
-    <div class="form-floating">
-      <input type="text" class="form-control" id="floatingInput" placeholder="Name">
-      <label for="floatingInput">Login</label>
-    </div>
-    <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-      <label for="floatingPassword">Password</label>
-    </div>
-
-    <div class="checkbox mb-3">
-      <label>
-        <input type="checkbox" value="remember-me"> Remember me
-      </label>
-    </div>
-
-    <button class="w-100 btn btn-lg btn-primary" type="submit" style="background-color: #F2B66D; border: none;">Login</button>
-    <p class="mt-5 mb-3 text-muted">&copy; AFK Society - 2021</p>
-  </form>
-  
-</main>
-
-
-    
+    <main class="form-signin">
+      <div id="signup">
+        <img class="mb-4" src="assets/img/logo.png" alt="" width="110" height="90">
+        <h1 class="h3 mb-3 fw-normal">Sign in</h1>
+        <div class="form-floating">
+          <input type="text" class="form-control" name="login" id="floatingInput" placeholder="Login">
+          <label for="floatingInput">Login</label>
+          <br>
+        </div>
+        <div class="form-floating">
+          <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+        </div>
+        <br>
+        <button class="w-100 btn btn-lg btn-primary" type="submit" onclick="login()" style="background-color: #F2B66D; border: none;">Login</button>
+        <p class="mt-5 mb-3 text-muted">&copy; AFK Society - 2021</p>
+      </div>
+    </main>
   </body>
 </html>

@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.main.mypet.dto.PersonDto;
 import com.main.mypet.entities.Person;
+import com.main.mypet.entities.Questions;
 import com.main.mypet.service.PersonService;
 
 
@@ -25,7 +26,7 @@ public class PersonController {
 	private PersonService personService;
 	
 	@PostMapping(value = "/create-person")
-	public String createPerson(@RequestBody PersonDto person) {
+	public Long createPerson(@RequestBody PersonDto person) {
 		return personService.createPerson(person);
 	}
 	
@@ -39,6 +40,16 @@ public class PersonController {
 		return personService.findById(id);
 	}
 	
+	@GetMapping(value = "/login/{login}/{password}")
+	public Long userLogin(@PathVariable String login, @PathVariable String password) {
+		return personService.userLogin(login, password);
+	}
+	
+	@PostMapping(value = "/delete-all")
+	public void deleteAll() {
+		personService.deleteAll();
+	}
+	
 	@PostMapping(value = "/update-person/{id}")
 	public String updatePerson(@PathVariable Long id, @RequestBody PersonDto person) {
 		return personService.updatePerson(id, person);
@@ -47,6 +58,16 @@ public class PersonController {
 	@PostMapping(value = "/delete-person/{id}")
 	public String deletePerson(@PathVariable Long id) {
 		return personService.deletePerson(id);
+	}
+	
+	@PostMapping(value = "/add-score/{id}")
+	public void addScore(@PathVariable Long id, @RequestBody Questions questions) {
+		personService.addScore(id, questions);
+	}
+	
+	@PostMapping(value = "/adopt-pet/{personId}/{petId}")
+	public void adoptPet(@PathVariable Long personId, @PathVariable Long petId) {
+		personService.adoptPet(personId, petId);
 	}
 	
 }

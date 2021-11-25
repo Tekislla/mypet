@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Página inicial</title>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+
+        <link href="css/styles.css" rel="stylesheet">
+        <link rel="shortcut icon" href="assets/img/urlicon.png">
+        <link rel="stylesheet" href="css/heading.css">
+        <link rel="stylesheet" href="css/body.css">
+
+    </head>
+    <body id="page-top" onload="getPets()">
+        <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
+            <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top"><img id="brandImage" src="assets/img/logo2.png" alt=""></a>
+                <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Pets</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Sobre nós</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <img class="masthead-avatar mb-5" src="assets/img/logo.png" alt="">
+                <h1 class="masthead-heading mb-0" >Olá, <span id=loggedName></span>!</h1>
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-paw"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <br>
+                <div id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="navButtons" id="indexButton" style="display: inline-block;"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="addpet.html">Adicione um pet</a>
+                        </li>
+                        <br>
+                        <li class="navButtons" id="indexButton" style="display: inline-block;"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" onclick="logout()" href="index.html">Sair</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="page-section-heading text-secondary mb-0 d-inline-block">PETS</h2>
+                </div>
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-paw"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div id="petGrid" class="row justify-content-center">
+
+                </div>
+            </div>
+        </section>
+        <div id="petModals">
+        
+        </div>
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="page-section-heading d-inline-block text-white">SOBRE O PROJETO</h2>
+                </div>
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-paw"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 ml-auto">
+                        <p class="pre-wrap lead">O MyPet nasceu com o intuito de ajudar os animais carentes a encontrarem famílias responsáveis, onde eles sejam bem tratados, mimados e recebam todo o carinho do mundo!</p>
+                    </div>
+                    <div class="col-lg-4 mr-auto">
+                        <p class="pre-wrap lead">Futuramente, pretendemos disponibilizar a aplicação para ONGs relacionadas aos animais, para que todos obtenham acesso à aplicação.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="page-section-heading text-secondary d-inline-block mb-0">CONTATO</h2>
+                </div>
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-paw"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="icon-contact mb-3"><i class="fas fa-mobile-alt"></i></div>
+                            <div class="text-muted">Phone</div>
+                            <div class="lead font-weight-bold">(47) 99198-5098</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="icon-contact mb-3"><i class="far fa-envelope"></i></div>
+                            <div class="text-muted">Email</div><a class="lead font-weight-bold" href="mailto:jplazarim@gmail.com">jplazarim@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="mb-4">LOCALIZAÇÃO</h4>
+                        <p class="pre-wrap lead mb-0">Joinville 
+Santa Catarina </p>
+                    </div>
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="mb-4">NOSSAS REDES SOCIAIS</h4><a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/StartBootstrap"><i class="fab fa-fw fa-facebook-f"></i></a><a class="btn btn-outline-light btn-social mx-1" href="https://www.twitter.com/sbootstrap"><i class="fab fa-fw fa-twitter"></i></a>
+                    </div>
+                    <div class="col-lg-4">
+                        <h4 class="mb-4">SOBRE AFK SOCIETY</h4>
+                        <p class="pre-wrap lead mb-0">Nós da AFK Society somos um grupo de estudantes do curso de engenharia de software, do Centro Universitário Católica de Santa Catarina.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <section class="copyright py-4 text-center text-white">
+            <div class="container"><small class="pre-wrap">© AFK Society 2021 </small></div>
+        </section>
+        <div class="scroll-to-top d-lg-none position-fixed"><a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
