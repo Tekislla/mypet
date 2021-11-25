@@ -13,6 +13,8 @@ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
 			<column name="name" type="varchar(50)" />
 			<column name="email" type="varchar(50)" />
 			<column name="password" type="varchar(50)" />
+			<column name="score" type="integer" />
+			<column name="can_adopt" type="boolean" />
 		</createTable>
 		<createTable tableName="pet">
 			<column name="id" type="bigint" autoIncrement="true">
@@ -23,6 +25,7 @@ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
 			<column name="race" type="varchar(20)" />
 			<column name="city" type="varchar(30)" />
 			<column name="state" type="varchar(30)" />
+			<column name="contact_email" type="varchar(50)" />
 			<column name="age" type="int" />
 			<column name="photo" type="bytea" />
 		</createTable>
