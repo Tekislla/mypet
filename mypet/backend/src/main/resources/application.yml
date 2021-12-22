@@ -1,0 +1,31 @@
+server:
+ port: 5000
+ servlet:
+    context-path: /mypet
+ 
+spring:
+  application:
+    name: "mypet"
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mypet
+    username: postgres
+    password: postgres
+    driver: 
+      class: org.hibernate.dialect.PostgreSQL10Dialect
+  liquibase:
+    change-log: classpath:/db/dbchangeLog.xml
+  jpa:
+    hibernate:
+      ddl-auto: none
+  mail:
+      host: smtp.gmail.com
+      port: 587
+      username: your email
+      password: your password
+      properties:
+        mail:
+          smtp: 
+            auth: true
+            starttls:
+              enable: true
+    
