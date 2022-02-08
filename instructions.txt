@@ -9,17 +9,5 @@
 - abrir o cmd e ir até a pasta onde está o app
 	- digitar o comando: java -jar mypet-0.0.1-SNAPSHOT.jar
 
-- abrir os arquivos html na pasta FRONTEND do repositório (apenas signup e addpet)
-	- cadastrar o usuário
-	- cadastrar o pet
-
-- ir até o postman
-- digitar localhost:5000/mypet/person/find-all ----- (encontrar todos os usuários)
-	- localhost:5000/mypet/person/find-by-id/{id a ser passado} ----- (encontrar usuário por id)
-	- localhost:5000/mypet/person/delete-person/{id a ser passado} ----- (deletar usuário por id)
-
-
-	- localhost:5000/mypet/pet/find-all ----- (encontrar todos os pets)
-	- localhost:5000/mypet/pet/find-by-id/{id a ser passado} ----- (encontrar pet por id)
-	- localhost:5000/mypet/person/delete-pet/{id a ser passado} ----- (deletar pet por id)
-
+- abrir o arquivo index.html na pasta front-end
+- feito :)
